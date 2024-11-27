@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Aventura na Nave Espacial</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0: Início -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/nave-espacial.png" alt="Nave espacial abandonada">
+            <p>Você acorda em uma cápsula de hibernação dentro de uma nave espacial. Tudo está silencioso, e as luzes piscam intermitentemente. Você não lembra como chegou ali. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Explorar os corredores da nave</button>
+            <button class="btn-proximo" data-proximo="2">Gritar pedindo ajuda</button>
+        </div>
+
+        <!-- Passo 1: Explorar os corredores -->
+        <div class="passo" id="passo-1">
+            <p>Ótimo, você encontrou uma sala de controle! A nave está fora de curso e com os sistemas de suporte de vida comprometidos. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">Reiniciar os sistemas da nave</button>
+            <button class="btn-proximo" data-proximo="4">Sair para procurar suprimentos</button>
+        </div>
+
+        <!-- Passo 2: Gritar pedindo ajuda -->
+        <div class="passo" id="passo-2">
+            <p>Ops! Você chamou a atenção de uma criatura alienígena que estava à espreita. Você foi atacado!</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 3: Reiniciar os sistemas -->
+        <div class="passo" id="passo-3">
+            <p>Ótimo! O oxigênio volta ao normal, mas ainda há um problema no motor da nave. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="5">Procurar o depósito de peças</button>
+            <button class="btn-proximo" data-proximo="6">Tentar improvisar com o que tem</button>
+        </div>
+
+        <!-- Passo 4: Procurar suprimentos -->
+        <div class="passo" id="passo-4">
+            <p>Você encontra suprimentos, mas um alarme dispara e atrai a criatura alienígena. Você corre perigo!</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 5: Procurar o depósito -->
+        <div class="passo" id="passo-5">
+            <p>Você encontra o depósito, mas ele está trancado. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="7">Forçar a entrada</button>
+            <button class="btn-proximo" data-proximo="8">Procurar outro lugar para peças</button>
+        </div>
+
+        <!-- Passo 6: Improvisar com o que tem -->
+        <div class="passo" id="passo-6">
+            <p>Seu improviso falha e o motor explode. A nave fica à deriva no espaço.</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 7: Forçar a entrada -->
+        <div class="passo" id="passo-7">
+            <p>Sucesso! Você encontra as peças necessárias para consertar o motor. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Consertar o motor e lançar a nave</button>
+            <button class="btn-proximo" data-proximo="10">Tentar pousar em um planeta próximo</button>
+        </div>
+
+        <!-- Passo 8: Procurar outro lugar -->
+        <div class="passo" id="passo-8">
+            <p>Você se perde nos corredores e fica sem oxigênio. Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 9: Lançar a nave -->
+        <div class="passo" id="passo-9">
+            <p>Com o motor consertado, você lança a nave de volta à rota original e sobrevive! Parabéns!</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 10: Pousar em um planeta -->
+        <div class="passo" id="passo-10">
+            <p>Você pousa no planeta, mas descobre que ele é habitado por criaturas hostis. Você não sobrevive.</p>
+            <p>Fim da aventura!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
